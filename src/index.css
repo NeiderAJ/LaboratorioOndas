@@ -1,0 +1,37 @@
+:root {
+  --color-primary: #006633; /* Un verde institucional UdeA */
+  --color-text: #333;
+  --color-background: #ffffff;
+  --color-light-gray: #f4f4f4;
+  --font-family-sans: 'Helvetica', 'Arial', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family-sans);
+  /* Cambiamos el fondo de toda la página */
+  background-color: var(--color-light-gray); 
+  color: var(--color-text);
+}
+
+/* Estilo general para los enlaces */
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+/* Subtítulos en verde */
+
+/* Estilo para los títulos de sección destacados */
+.section-title {
+  color: var(--color-primary);
+  font-size: 2rem; /* Opcional: ajustamos un poco el tamaño para darle más presencia */
+  border-bottom: 2px solid var(--color-light-gray); /* Un sutil subrayado que no llega a los bordes */
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}

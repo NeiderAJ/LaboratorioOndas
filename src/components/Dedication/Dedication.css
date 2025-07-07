@@ -1,0 +1,30 @@
+.dedication-box {
+  margin: 80px auto 40px auto; /* Buen espacio arriba y abajo */
+  padding: 25px;
+  border-top: 2px solid var(--color-primary);
+  border-bottom: 2px solid var(--color-primary);
+  background-color: #fdfdfd;
+  max-width: 800px;
+  text-align: center;
+}
+
+.dedication-text {
+  font-style: italic;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.dedication-text strong {
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+.rights-text {
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px dashed #ccc;
+}

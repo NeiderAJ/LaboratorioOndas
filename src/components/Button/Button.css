@@ -1,0 +1,56 @@
+.custom-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px; /* Un poco más grandes para el efecto 3D */
+  margin: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  
+  /* --- El Corazón del Neumorfismo --- */
+
+  /* 1. El fondo: Un color ligeramente diferente al fondo de la página */
+  /* Usaremos --color-light-gray que definimos en index.css */
+  background: var(--color-light-gray); 
+  
+  /* 2. El borde: Un gradiente sutil para simular el borde de un cristal */
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 12px;
+
+  /* 3. El texto: Nuestro color verde institucional */
+  color: var(--color-primary);
+
+  /* 4. Las Sombras: ¡Aquí ocurre la magia 3D! */
+  /* Sombra superior-izquierda (luz) y sombra inferior-derecha (oscuridad) */
+  box-shadow: 
+    -6px -6px 12px rgba(255, 255, 255, 0.8), /* Sombra clara */
+    6px 6px 12px rgba(0, 0, 0, 0.1);      /* Sombra oscura */
+
+  /* 5. La transición: Suaviza el cambio al presionar */
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.custom-button:hover {
+  /* Al pasar el ratón, invertimos ligeramente el efecto para dar feedback */
+  box-shadow: 
+    -4px -4px 8px rgba(255, 255, 255, 0.8),
+    4px 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-1px); /* Un ligero levantamiento */
+}
+
+.custom-button:active {
+  /* --- Efecto de "Hundimiento" al hacer clic --- */
+  
+  /* Invertimos las sombras para que parezca que se presiona hacia adentro */
+  box-shadow: 
+    inset -4px -4px 8px rgba(255, 255, 255, 0.8),
+    inset 4px 4px 8px rgba(0, 0, 0, 0.1);
+  
+  /* Quitamos el levantamiento para completar la sensación de presionar */
+  transform: translateY(0);
+  
+  /* Opcional: hacemos el texto un poco más oscuro al presionar */
+  color: #004d26;
+}

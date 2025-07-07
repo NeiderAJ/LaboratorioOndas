@@ -1,0 +1,62 @@
+.hero-section {
+  position: relative;
+  height: 60vh; /* Ocupa el 60% de la altura de la ventana */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Oculta cualquier parte del video que se salga */
+  color: white;
+  text-align: center;
+}
+
+.hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que el video cubra todo el contenedor sin deformarse */
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Capa oscura para mejorar legibilidad del texto */
+  z-index: 2;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  padding: 20px;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.content-section {
+  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto; /* Centra el contenido de texto */
+  line-height: 1.6;
+  background-color: var(--color-light-gray); 
+}
+
+.button-container {
+  margin-top: 30px;
+  text-align: center;
+}

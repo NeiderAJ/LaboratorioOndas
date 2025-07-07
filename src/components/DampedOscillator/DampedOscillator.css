@@ -1,0 +1,116 @@
+.damped-oscillator-wrapper {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #fdfdfd;
+  margin-top: 20px;
+}
+
+.visualization-container {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.physics-display, .graph-display {
+  flex: 1;
+  min-width: 0;
+  /* Añadimos una altura mínima para que los contenedores se alineen bien */
+  min-height: 400px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.graph-canvas {
+  width: 100%;
+  height: 400px;
+}
+
+
+.placeholder-canvas {
+  width: 100%;
+  height: 300px;
+  background-color: #e9e9e9;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #999;
+}
+
+.controls-panel {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.controls-section h4 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: var(--color-primary);
+}
+
+.control-group {
+  margin-bottom: 15px;
+}
+
+.control-group label {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+/* Estilos para las marcas del slider */
+.range-marks {
+  position: relative;
+  height: 15px;
+  margin-top: -5px;
+}
+
+.range-marks span {
+  position: absolute;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: #777;
+}
+
+.range-marks em {
+  position: absolute;
+  transform: translateX(-50%);
+  top: 10px;
+  font-style: normal;
+}
+
+/* Estilos para los radio buttons */
+.radio-group-vertical label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.radio-group-vertical input[type="radio"] {
+  margin-right: 8px;
+}
+
+
+.graph-hold-control {
+  text-align: center;
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.graph-hold-control label {
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.graph-hold-control input {
+  margin-right: 8px;
+  vertical-align: middle;
+}

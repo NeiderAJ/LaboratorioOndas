@@ -1,0 +1,35 @@
+.guide-figure {
+  margin: 30px auto;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  background-color: #fdfdfd;
+  max-width: 950px;
+}
+
+.guide-figure img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Asegura que no tenga espacio extra debajo */
+  margin: 0 auto; /* Centra la imagen si es más pequeña que el contenedor */
+}
+
+.guide-figure figcaption {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #f0f0f0; /* Línea sutil para separar imagen de leyenda */
+  font-size: 0.9rem;
+  color: #555;
+  text-align: center; /* Alineamos el texto a la izquierda para un look más formal */
+}
+
+.figure-description {
+  display: block; /* La descripción ocupa su propia línea */
+  margin-bottom: 5px; /* Espacio entre descripción y número de figura */
+}
+
+.figure-caption {
+  display: block; /* El número de figura ocupa su propia línea */
+  font-weight: bold; /* Hacemos que "Figura 2.1" resalte */
+  text-align: center; /* Centramos el número de la figura */
+}
