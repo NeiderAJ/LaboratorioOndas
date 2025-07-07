@@ -52,6 +52,10 @@
 /* --- Estilos del Dropdown --- */
 .dropdown {
   position: relative;
+  /* Añadimos un padding inferior para crear un "puente" para el cursor */
+  padding-bottom: 10px; 
+  /* Hacemos que el dropdown ocupe el espacio del padding */
+  margin-bottom: -10px;
 }
 
 .dropdown-menu {
@@ -63,7 +67,7 @@
   border-radius: 4px;
   list-style: none;
   padding: 10px 0;
-  margin-top: 5px; /* Pequeño espacio */
+  /*margin-top: 5px; /* Pequeño espacio */
   min-width: 200px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   z-index: 1000;

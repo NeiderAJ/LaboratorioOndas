@@ -26,14 +26,14 @@ const Navbar = () => {
       <ul className="navbar-links">
         <li><NavLink to="/">Inicio</NavLink></li>
         <li 
-          className="dropdown"
-          onMouseEnter={() => setIsMenuOpen(true)}
-          onMouseLeave={() => setIsMenuOpen(false)}
+          className="dropdown" // La clase se mantiene en el <li>
+          onMouseEnter={() => setIsMenuOpen(true)} // El evento ahora está en el contenedor
+          onMouseLeave={() => setIsMenuOpen(false)} // El evento ahora está en el contenedor
         >
           <span className="dropdown-toggle">Lab de Ondas FIII</span>
           {isMenuOpen && (
             <ul className="dropdown-menu">
-                            {labLinks.map((link) => (
+              {labLinks.map((link) => (
                 <li key={link.title} className={link.disabled ? 'disabled-link' : ''}>
                   {link.disabled ? (
                     <span>{link.title} <small>(En construcción)</small></span>
