@@ -18,7 +18,7 @@ const processNode = (node, key) => {
       const src = node.getAttribute('src');
       const alt = node.getAttribute('alt');
       const caption = node.getAttribute('caption');
-      return <Figure key={key} src={src} alt={alt} caption={caption} />;
+      return <Figure key={key} src={`${import.meta.env.BASE_URL}${src.substring(1)}`} alt={alt} caption={caption} />;
     }
     // 2. Añadir el caso para el placeholder de la simulación cuerda
     if (TagName === 'simulation-placeholder') {

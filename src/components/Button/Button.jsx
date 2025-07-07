@@ -8,7 +8,7 @@ const Button = ({ children, href, download = false }) => {
   return (
     <a 
       className="custom-button" 
-      href={href} 
+      href={download ? `${import.meta.env.BASE_URL}${href}` : href} 
       // Si download es true, se añade el atributo 'download' al enlace
       {...(download && { download: true })}
       // Para enlaces externos, es bueno añadir estos atributos por seguridad

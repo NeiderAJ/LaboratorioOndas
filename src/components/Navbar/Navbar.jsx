@@ -20,7 +20,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-logo">
         <Link to="/">
-          <img src="/logo_udea.png" alt="Logo Universidad de Antioquia" />
+          <img src={`${import.meta.env.BASE_URL}logo_udea.png`} alt="Logo Universidad de Antioquia" />
         </Link>
       </div>
       <ul className="navbar-links">

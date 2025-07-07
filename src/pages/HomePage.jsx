@@ -9,7 +9,7 @@ const HomePage = () => {
       <section className="hero-section">
         <video 
           className="hero-video" 
-          src="/hero-video.mp4" 
+          src={`${import.meta.env.BASE_URL}hero-video.mp4`} 
           autoPlay 
           loop 
           muted 
